@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baked — Générateur de sites statiques</title>
+<meta name="description" content="Extension Chrome et Brave qui convertit un site web en site statique léger et autonome.">
+<link rel="icon" href="icone.png">
+<style>
+  :root { --bg: #f6f4ef; --fg: #1d1d1b; --muted: #5b5852; --accent: #8a4b1c; --card: #ffffff; --line: #e3dfd7; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1b1713; --fg: #f1ece4; --muted: #b9b1a6; --accent: #e9a35a; --card: #241f1a; --line: #3a332b; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  header { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+  header img { width: 72px; height: 72px; }
+  h1 { font-size: 2rem; margin: 0; }
+  header p { margin: 2px 0 0; color: var(--muted); }
+  h2 { font-size: 1.15rem; margin: 2em 0 .4em; color: var(--accent); }
+  ul, ol { padding-left: 1.2em; }
+  a { color: var(--accent); }
+  footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icone.png" alt="">
+    <div>
+      <h1>Baked</h1>
+      <p>Générateur de sites statiques — extension pour Chrome et Brave</p>
+    </div>
+  </header>
+
+  <p>Baked convertit un site web en site statique : un dossier de pages HTML autonomes, aux liens relatifs,
+  qui fonctionne sans base de données, sans PHP et sans mises à jour de sécurité. Le résultat s'héberge sur
+  n'importe quel serveur web, à la racine d'un domaine ou dans un sous-dossier.</p>
+
+  <h2>Fonctionne avec</h2>
+  <ul>
+    <li>WordPress et autres gestionnaires de contenu</li>
+    <li>Sites faits à la main (HTML, CSS, JavaScript)</li>
+    <li>Applications React, Vue et Vite</li>
+  </ul>
+
+  <h2>Utilisation</h2>
+  <ol>
+    <li>Ouvrez la page d'accueil du site et cliquez sur l'icône de l'extension.</li>
+    <li>Choisissez quoi faire des formulaires et des images, puis cliquez sur « Archiver ».</li>
+    <li>Téléchargez le zip.</li>
+  </ol>
+
+  <h2>Confidentialité</h2>
+  <p>Tout le traitement se fait dans votre navigateur. Aucune donnée n'est collectée ni transmise.
+  <a href="confidentialite.html">Politique de confidentialité</a></p>
+
+  <h2>Aide</h2>
+  <p>Questions et problèmes : <a href="https://github.com/jfleblanc/baked/issues">github.com/jfleblanc/baked/issues</a></p>
+
+  <footer>Baked</footer>
+</main>
+</body>
+</html>
